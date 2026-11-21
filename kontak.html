@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak &amp; Paket PotKecil — Juhariatul Zahra (2510010229 - TI Non Reguler 3B BJB)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">PotKecil</a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka menu navigasi" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Navigasi Utama">
+        <a href="index.html">Beranda</a>
+        <a href="index.html#produk">Produk</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-top">
+    <section class="section-block">
+      <div class="section-heading">
+        <h1>Hubungi PotKecil</h1>
+        <p>Kirim pertanyaan seputar stok tanaman, pemesanan suvenir acara, atau konsultasi perawatan.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- FORM KONTAK -->
+        <form action="#" method="post" class="contact-form">
+          <fieldset>
+            <legend>Formulir Pemesanan &amp; Pertanyaan</legend>
+
+            <div class="form-group">
+              <label for="nama">Nama Lengkap *</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Alamat Email *</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subjek">Subjek Pesan</label>
+              <select id="subjek" name="subjek">
+                <option value="pemesanan">Pemesanan Tanaman / Paket</option>
+                <option value="suvenir">Pesanan Suvenir Acara</option>
+                <option value="konsultasi">Konsultasi Perawatan Tanaman</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pesan">Pesan / Detail Pesanan</label>
+              <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan jenis tanaman atau pertanyaan Anda..."></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-cta">Kirim Pesan</button>
+              <button type="reset" class="btn-reset">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+
+        <!-- LOKASI & PETA EMBED -->
+        <div class="map-card">
+          <h2>Lokasi Galeri Mini</h2>
+          <p>Jl. Panglima Batur No. 24, Loktabat Utara, Banjarbaru, Kalimantan Selatan</p>
+          <p>Buka: Senin – Sabtu, pukul <time datetime="09:00">09.00</time> – <time datetime="17:00">17.00</time> WITA</p>
+
+          <div class="map-wrapper">
+            <iframe
+              title="Peta Lokasi PotKecil Banjarbaru"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=114.8250%2C-3.4550%2C114.8550%2C-3.4350&amp;layer=mapnik"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABEL DAFTAR LAYANAN / PAKET -->
+    <section class="section-block">
+      <div class="table-wrapper">
+        <table class="service-table">
+          <caption>Daftar Paket Tanaman &amp; Layanan Perawatan PotKecil</caption>
+          <thead>
+            <tr>
+              <th>Nama Paket / Layanan</th>
+              <th>Isi Paket &amp; Fasilitas</th>
+              <th>Estimasi Siap</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paket Hemat Kamar</td>
+              <td>1 Sirih Gading Mini + Pot Plastik Tebal + Media Tanam</td>
+              <td>1 Hari</td>
+              <td>Rp30.000</td>
+            </tr>
+            <tr>
+              <td>Paket Meja Kerja</td>
+              <td>2 Tanaman Indoor + Pot Tanah Liat + Batu Hias + Panduan</td>
+              <td>1–2 Hari</td>
+              <td>Rp75.000</td>
+            </tr>
+            <tr>
+              <td>Jasa Repotting &amp; Ganti Media</td>
+              <td>Penggantian media tanam organik steril + pemangkasan daun kering</td>
+              <td>Hari yang sama</td>
+              <td>Rp20.000 / pot</td>
+            </tr>
+            <tr>
+              <td>Paket Suvenir Mini (Min. 20 pcs)</td>
+              <td>Kaktus/Sukulen + Pot Terakota + Kartu Ucapan Kustom</td>
+              <td>3–5 Hari</td>
+              <td>Rp18.000 / pcs</td>
+            </tr>
+            <tr>
+              <td colspan="3"><strong>Gratis Ongkir Area Banjarbaru untuk pembelian minimal Rp100.000</strong></td>
+              <td><strong>Rp0</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 PotKecil — Juhariatul Zahra | NPM: 2510010229 | Kelas: TI Non Reguler 3B BJB</p>
+    </div>
+  </footer>
+</body>
+</html>
